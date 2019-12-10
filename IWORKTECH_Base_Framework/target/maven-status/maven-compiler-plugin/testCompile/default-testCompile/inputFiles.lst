@@ -1,14 +1,13 @@
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\Framework\SetBrowser.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\Helper\ScreenshotHook.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\BaseClass.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\Framework\CommonMethods.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\Framework\Builder.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\stepdefs\memberRegistrationStepDef.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\RunAPISuite.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\Helper\ScreenshotHelper.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\stepdefs\MyStepdefs.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\RunWebSuite.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\stepdefs\testMe.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\Models\InstituteInformation.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\Models\UserInformation.java
-D:\Automation\IWORKTECH Base Framework\src\test\java\com\iworktech\test\Framework\PageObjects\UserRegistration.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\RunFireFoxWebSuite.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\Screenshot\ScreenshotHook.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\stepdefs\memberRegistrationStepDef.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\PageObjects\UserRegistration.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\Screenshot\TakeScreenshot.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\Framework\CommonMethods.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\stepdefs\MyStepdefs.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\RunChromeWebSuite.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\Framework\Builder.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\POJOModels\InstituteInformation.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\stepdefs\testMe.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\Framework\SetBrowser.java
+D:\Automation\Framework\IWORKTECH_Base_Framework\src\test\java\com\iworktech\test\Framework\POJOModels\UserInformation.java

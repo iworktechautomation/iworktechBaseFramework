@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class Builder  {
-    FileReader reader=new FileReader("D:\\Automation\\Framework\\IWORKTECH_Base_Framework\\src\\main\\resources\\config.properties");
+    FileReader reader=new FileReader("D:\\Automation\\Framework\\IWORKTECH_Base_Framework\\src\\main\\resources\\ChromeProfile\\config.properties");
 
     private static Properties properties;
     private static RemoteWebDriver webDriver;
@@ -18,6 +18,8 @@ public class Builder  {
         properties = new Properties();
         properties.load(reader);
         System.out.println(properties.getProperty("browser"));
+
+
     }
 
     public static void openURL() throws IOException {

@@ -1,8 +1,7 @@
 package com.iworktech.test.Framework.PageObjects;
 
 import com.iworktech.test.Framework.Framework.CommonMethods;
-import com.iworktech.test.Framework.Models.InstituteInformation;
-import org.openqa.selenium.By;
+import com.iworktech.test.Framework.POJOModels.InstituteInformation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

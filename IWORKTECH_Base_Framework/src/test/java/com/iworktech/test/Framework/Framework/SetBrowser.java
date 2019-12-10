@@ -4,6 +4,8 @@ import cucumber.api.java.After;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.AfterSuite;
@@ -18,7 +20,6 @@ public class SetBrowser extends EventFiringWebDriver {
     private static final Thread CLOSE_THREAD = new Thread() {
         @Override
         public void run() {
-            System.out.println("must close");
             if (webDriver != null) {
                 webDriver.quit();
             }
@@ -46,6 +47,7 @@ public class SetBrowser extends EventFiringWebDriver {
         }
         else if (browserName.equals("FireFox")) {
             setFireFoxDriverPath();
+            initializeFireFoxDriver();
         }
     }
 
@@ -54,11 +56,15 @@ public class SetBrowser extends EventFiringWebDriver {
     }
 
     private static void setFireFoxDriverPath(){
-
+        System.setProperty("webdriver.gecko.driver",returnFirefoxDriverPath());
     }
 
     private static String returnChromeDriverPath(){
         return "tools" + FILE_SEPARATOR + "chromedriver" + FILE_SEPARATOR + "chromedriver.exe";
+    }
+
+    private static String returnFirefoxDriverPath(){
+        return "tools" + FILE_SEPARATOR + "geckodriver" + FILE_SEPARATOR +"win32"+FILE_SEPARATOR+ "geckodriver.exe";
     }
 
     private static void initializeChromeDriver(){
@@ -68,10 +74,16 @@ public class SetBrowser extends EventFiringWebDriver {
         webDriver = new ChromeDriver(options);
     }
 
+    private static void initializeFireFoxDriver(){
+        FirefoxOptions options = new FirefoxOptions();
+        //options.addArguments("incognito");
+        options.addArguments("start-maximized");
+        webDriver = new FirefoxDriver(options);
+    }
+
 
     @Override
     public void close() {
-        System.out.println("close close close");
         if (Thread.currentThread() != CLOSE_THREAD) {
             throw new UnsupportedOperationException(
                     "You shouldn't close this WebDriver. It's shared and will close when the JVM exits.");

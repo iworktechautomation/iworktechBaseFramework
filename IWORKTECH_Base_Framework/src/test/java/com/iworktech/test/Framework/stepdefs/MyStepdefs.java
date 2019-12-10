@@ -9,7 +9,7 @@ import org.testng.annotations.AfterTest;
 public class MyStepdefs {
     @And("^sdsd$")
     public void sdsd() {
-        System.out.println("yerer");
+
     }
 
 /*    @After

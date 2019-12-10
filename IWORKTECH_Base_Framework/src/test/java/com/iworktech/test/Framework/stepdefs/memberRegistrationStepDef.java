@@ -1,12 +1,11 @@
 package com.iworktech.test.Framework.stepdefs;
 
-import com.iworktech.test.Framework.Models.InstituteInformation;
+import com.iworktech.test.Framework.POJOModels.InstituteInformation;
 import com.iworktech.test.Framework.PageObjects.UserRegistration;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.testng.Assert;
 import cucumber.api.java.After;
 
 import java.util.List;
@@ -32,6 +31,8 @@ public class memberRegistrationStepDef {
     @Then("^the Institutional Expertise page should open$")
     public void the_Institutional_Expertise_page_should_open() throws Throwable {
         //Assert.assertEquals();
+
+
     }
 
 
@@ -62,7 +63,7 @@ public class memberRegistrationStepDef {
 
     @After
     public void pleaserun(){
-        System.out.println("please run re baba");
+
     }
 
 }
